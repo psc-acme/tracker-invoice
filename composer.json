@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/tracker-invoice",
+    "description": "Package tracker-invoice for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\TrackerInvoice\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "webmozart/assert": "^1.0",
+        "guzzlehttp/psr7": "^2.0",
+        "aws/aws-sdk-php": "^3.332",
+        "symfony/finder": "^7.0",
+        "psr/container": "^2.0",
+        "doctrine/dbal": "^4.0"
+    },
+    "require-dev": {
+        "infection/infection": "^0.27",
+        "symfony/phpunit-bridge": "^7.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
